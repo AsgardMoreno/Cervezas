@@ -1,0 +1,24 @@
+.cervezasContain{
+    
+    position: relative;
+    top: -10.3em;
+    right: 34.8em;
+    z-index: 1;
+    border: solid .2em white;
+    width: 44em;
+    height: 12.5em;
+    overflow-x: auto;
+}
+    
+.cervezaDiv{
+    display: flex;
+    flex-flow: row nowrap;
+    
+    width: 44em;
+    height: 12.5em;
+    align-items: baseline;
+}
+.estaCerveza{
+    display: inline-block;
+    width:  7em;
+}

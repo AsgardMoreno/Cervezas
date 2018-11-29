@@ -1,0 +1,156 @@
+*{
+box-sizing: border-box;
+font-family: 'Kalam', cursive;
+}
+
+@media all and (min-width: 375px){
+    font-size: .3em;
+}
+body{
+    
+    height: 100vh;
+    background-image: radial-gradient(gray 9.9%, black 90.1%);
+    background-size: cover;
+}
+header{
+    font-size: 1.2em;
+    color: white;
+    position: fixed;
+
+}
+.logo{
+    position:fixed;
+    width: 10em;
+    padding: 1em;
+    top:.5em;
+    margin-bottom: 1em;
+}
+.logIn{
+    background-image:radial-gradient(white 9.9%, rgba(138, 138, 138, 0.76) 90.1%);
+    border: none;
+    top: 10em;
+    border-radius: .5em;
+    border-top-left-radius: .1em;
+    border-bottom-right-radius: .1em;
+    border: groove .2em transparent; 
+    animation: 3s bordeXYZ infinite;
+    position: fixed;
+
+    font-size: 1.5em;
+    z-index: 1;
+    left: 2.5em;
+    height: 2.3em;
+    width: 5.5em;
+    cursor: pointer;
+}
+@keyframes  bordeXYZ{
+    0%{
+        
+        border-bottom-color: rgba(63, 63, 226, 0.705);
+    }
+    50%{
+        border-bottom-color: antiquewhite;
+        border-left-color: rgba(63, 63, 226, 0.274);
+    }
+    100%{
+        border-left-color: antiquewhite;
+    }
+}
+
+.logOut{
+    background-image:radial-gradient(white 9.9%, rgba(138, 138, 138, 0.76) 90.1%);
+    border: none;
+    top: 15em;
+    border-radius: .5em;
+    border-top-left-radius: .1em;
+    border-bottom-right-radius: .1em;
+    border: groove .2em transparent; 
+    animation: 3s borde2XYZ infinite;
+    position: fixed;
+
+    font-size: 1.5em;
+    z-index: 1;
+    left: 2em;
+    height: 2.3em;
+    width: 5.5em;
+    cursor: pointer;
+}
+@keyframes  borde2XYZ{
+    0%{
+        
+        border-bottom-color: rgba(226, 63, 63, 0.705);
+    }
+    50%{
+        border-bottom-color: antiquewhite;
+        border-left-color: rgba(226, 63, 63, 0.274);
+    }
+    100%{
+        border-left-color: antiquewhite;
+    }
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    margin-top: 2em;
+    
+}
+.barra{
+    position: fixed;
+    width: 50em;
+    z-index: 1;
+}
+
+.barman{
+    position:relative;
+    width: 10em;
+    z-index: 2;
+    left:34em;
+    top: 1.5em;
+   
+}
+.beerMenu{
+    position:relative;
+    
+    z-index: 2;
+    height: 11em;
+    width: 24em;
+    margin-top: 5em;
+    left: 38em;
+
+}
+.bancoS{
+    margin-top:31em;
+    display: grid;
+    grid-template-columns: repeat(3, 7em);
+    grid-column-gap: 7em;
+    position: relative;
+    z-index: 3;
+   left:5em;
+}
+.banco1, .banco2, .banco3{ 
+    width: 5.5em;
+    z-index: 3;
+    margin: .15em;
+   
+}
+/* .despachador{
+    position:relative;
+    z-index: 2;
+    width: 8em;
+    left: 300px;
+    margin-top: 3em;
+} */
+
+.mainMenu{
+    position: fixed;
+    top: 11em;
+    width: 15em;
+    height: 31em;
+    z-index: 0;
+}
+.hide{
+    display: none;
+}
+
