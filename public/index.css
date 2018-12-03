@@ -1,156 +1,184 @@
 *{
-box-sizing: border-box;
-font-family: 'Kalam', cursive;
-}
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
 
-@media all and (min-width: 375px){
-    font-size: .3em;
-}
-body{
+    }
     
-    height: 100vh;
-    background-image: radial-gradient(gray 9.9%, black 90.1%);
-    background-size: cover;
-}
-header{
-    font-size: 1.2em;
-    color: white;
-    position: fixed;
-
-}
-.logo{
-    position:fixed;
-    width: 10em;
-    padding: 1em;
-    top:.5em;
-    margin-bottom: 1em;
-}
-.logIn{
-    background-image:radial-gradient(white 9.9%, rgba(138, 138, 138, 0.76) 90.1%);
-    border: none;
-    top: 10em;
-    border-radius: .5em;
-    border-top-left-radius: .1em;
-    border-bottom-right-radius: .1em;
-    border: groove .2em transparent; 
-    animation: 3s bordeXYZ infinite;
-    position: fixed;
-
-    font-size: 1.5em;
-    z-index: 1;
-    left: 2.5em;
-    height: 2.3em;
-    width: 5.5em;
-    cursor: pointer;
-}
-@keyframes  bordeXYZ{
-    0%{
+    @media all and (min-width: 375px){
+        transform: scale(.5);
+    }
+    
+    
+    body{
+       
+        height: 100vh;
+        background-image: radial-gradient(gray 9.9%, black 90.1%);
+        background-size: cover;
+        overflow: hidden;
+    }
+    .imgUsuario{
+        position: absolute;
+        width: 3em;
+        border-radius: 50%;
+        left: 722px;
+        top: 15px;
+        z-index: 1;
+    }
+    .userInfo{
+        margin-left:54px;
+    }
+    header{
+        height: 45px;
+        font-size: 1.2em;
+        color: rgba(255, 255, 255, 0.185);
+        margin: 20px;
+    
+    }
+    .logo{
+        position:absolute;
+        width: 9em;
+        padding: 1em;
+        left: 680px;;
+        top:-.3em;
+    }
+    .logIn{
+        background-image:radial-gradient(white 9.9%, rgba(138, 138, 138, 0.76) 90.1%);
+        border: none;
+        top: 10em;
+        border-radius: .5em;
+        border-top-left-radius: .1em;
+        border-bottom-right-radius: .1em;
+        border: groove .2em transparent; 
+        animation: 3s bordeXYZ infinite;
+        position: fixed;
+    
+        font-size: 1.3em;
+        z-index: 1;
+        left: 7.5em;
+        height: 2em;
+        width: 5.5em;
+        cursor: pointer;
+    }
+    @keyframes  bordeXYZ{
+        0%{
+            
+            border-bottom-color: rgba(63, 63, 226, 0.705);
+        }
+        50%{
+            border-bottom-color: antiquewhite;
+            border-left-color: rgba(63, 63, 226, 0.274);
+        }
+        100%{
+            border-left-color: antiquewhite;
+        }
+    }
+    
+    .logOut{
+        background-image:radial-gradient(white 9.9%, rgba(138, 138, 138, 0.76) 90.1%);
+        border: none;
+        border-radius: .5em;
+        border-top-left-radius: .1em;
+        border-bottom-right-radius: .1em;
+        border: groove .2em transparent; 
+        animation: 3s borde2XYZ infinite;
+        position: fixed;
+        top:0;
+        font-size: 1.3em;
+        z-index: 1;
+        right: 10px;
+        height: 2.3em;
+        width: 5.5em;
+        cursor: pointer;
+    }
+    @keyframes  borde2XYZ{
+        0%{
+            
+            border-bottom-color: rgba(226, 63, 63, 0.705);
+        }
+        50%{
+            border-bottom-color: antiquewhite;
+            border-left-color: rgba(226, 63, 63, 0.274);
+        }
+        100%{
+            border-left-color: antiquewhite;
+        }
+    }
+    .logOut:hover{
+        transform:scale(1.1);
+    }
+    main {
+        position: relative;
+        width: 1145px;
+        height: 655px;
+        margin: auto;
+        margin-top: 50px;
         
-        border-bottom-color: rgba(63, 63, 226, 0.705);
     }
-    50%{
-        border-bottom-color: antiquewhite;
-        border-left-color: rgba(63, 63, 226, 0.274);
-    }
-    100%{
-        border-left-color: antiquewhite;
-    }
-}
-
-.logOut{
-    background-image:radial-gradient(white 9.9%, rgba(138, 138, 138, 0.76) 90.1%);
-    border: none;
-    top: 15em;
-    border-radius: .5em;
-    border-top-left-radius: .1em;
-    border-bottom-right-radius: .1em;
-    border: groove .2em transparent; 
-    animation: 3s borde2XYZ infinite;
-    position: fixed;
-
-    font-size: 1.5em;
-    z-index: 1;
-    left: 2em;
-    height: 2.3em;
-    width: 5.5em;
-    cursor: pointer;
-}
-@keyframes  borde2XYZ{
-    0%{
+    .bar{
+        position: absolute;
+        height: 100%;
+        top: 243px;
+        left: 308px;
         
-        border-bottom-color: rgba(226, 63, 63, 0.705);
     }
-    50%{
-        border-bottom-color: antiquewhite;
-        border-left-color: rgba(226, 63, 63, 0.274);
+    .barra{
+        position: absolute;
+        top: 407px;
+        bottom: 221px;
+        margin: auto;
+        width: 877px;
+        height: 590px;
+        z-index: 1;
     }
-    100%{
-        border-left-color: antiquewhite;
-    }
-}
-.bar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:100%;
-    margin-top: 2em;
     
-}
-.barra{
-    position: fixed;
-    width: 50em;
-    z-index: 1;
-}
-
-.barman{
-    position:relative;
-    width: 10em;
-    z-index: 2;
-    left:34em;
-    top: 1.5em;
-   
-}
-.beerMenu{
-    position:relative;
+    .barman{
+        position: absolute;
+        width: 167px;
+        z-index: 2;
+        left: 75px;
+        top:-11px;
+       
+    }
+    .beerMenu{
+        position: absolute;
+        z-index: 2;
+        height: 198px;
+        width: 395px;
+        top: 50px;
+        left: 465px;
     
-    z-index: 2;
-    height: 11em;
-    width: 24em;
-    margin-top: 5em;
-    left: 38em;
+    }
+    .bancoS{
+        top: 340px;
+        display: grid;
+        grid-template-columns: repeat(3, 112px);
+        grid-column-gap: 112px;
+        position: absolute;
+        z-index: 3;
+        left: 200px;
+    }
+    .banco1, .banco2, .banco3{ 
+        width: 95px;
+        z-index: 3;
+        margin: -61px;
+       
+    }
+    
+    .mainMenu{
+        position: absolute;
+        top: 67px;
+        left: 5px;
+        width: 400px;
+        height: 525px;
+        z-index: 0;
+    }
+    
+    .Slogin{
+        z-index: 0;
+    }
 
-}
-.bancoS{
-    margin-top:31em;
-    display: grid;
-    grid-template-columns: repeat(3, 7em);
-    grid-column-gap: 7em;
-    position: relative;
-    z-index: 3;
-   left:5em;
-}
-.banco1, .banco2, .banco3{ 
-    width: 5.5em;
-    z-index: 3;
-    margin: .15em;
-   
-}
-/* .despachador{
-    position:relative;
-    z-index: 2;
-    width: 8em;
-    left: 300px;
-    margin-top: 3em;
-} */
+  
+ 
 
-.mainMenu{
-    position: fixed;
-    top: 11em;
-    width: 15em;
-    height: 31em;
-    z-index: 0;
-}
-.hide{
-    display: none;
-}
+  
 

@@ -1,24 +1,157 @@
-.cervezasContain{
+
+.allBar{
+    position:relative;
     
-    position: relative;
-    top: -10.3em;
-    right: 34.8em;
-    z-index: 1;
-    border: solid .2em white;
-    width: 44em;
-    height: 12.5em;
-    overflow-x: auto;
-}
-    
-.cervezaDiv{
+}  
+
+#cerveza{
     display: flex;
+    position: absolute;
     flex-flow: row nowrap;
+    align-items: flex-end;
+    z-index: 1;
+    top: -207px;
+    overflow-x: auto;
+    margin-top: 7px;
+    left:92px;
+    height: 220px;
     
-    width: 44em;
-    height: 12.5em;
-    align-items: baseline;
+    border: 4px groove transparent;
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
 }
 .estaCerveza{
     display: inline-block;
-    width:  7em;
+    width:  112px;
+    z-index: 2;
+    margin: 2px;
+    cursor: pointer;
+    
 }
+.estaCerveza:hover{
+    transition: 100ms;
+    transform:scale(1.05);
+}
+.cardName:active{
+    transition: 50ms;
+    transform:scale(1.4);
+    background: black;
+    border: 1px groove white;
+    padding: 10px;
+    z-index: 3;
+    border-radius: 20%;
+    padding: 37px;
+}
+
+.writeMenu{
+    position: absolute;
+    z-index: 3;
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: white;
+    top: 58px;
+    left: 489px;
+    font-size: 20px;
+    width: 323px;
+    height: 149px;
+    padding: 3px;
+  
+}
+.nombre{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+.cardName{
+    font-family: 'Acme', sans-serif;
+    font-size: 14px;
+}
+.menuOptions{
+    top: 126px;
+    left: 119px;
+    position: absolute;
+    width: 150px;
+    height: 290px;
+}
+
+.filtro{
+    width: 162px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin: 3px;
+    cursor: pointer;
+}
+.back{
+    font-size: 60px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    position: absolute;  
+    top: -110px;
+    left: 45px;
+    z-index: 1
+}
+.next{
+    font-size: 60px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 794px;
+    z-index: 1;
+    top: -110px;
+
+}
+
+.barManD{
+    position: absolute;
+    z-index: 2;
+    left: 204px;
+    width: 196px;
+    height: 292px;
+    top:25px;
+
+}
+.rating{
+    position: absolute;
+    width: 100px;
+    top: 28px;
+    z-index: 2;
+    left: 74px;
+   
+}
+.dialogo{
+    position: absolute;
+    width: 210px;
+    
+   
+    
+}
+.notas{
+    position: absolute;
+    width: 131px;
+    height: 160px;
+    overflow-y: auto;
+    top: 58px;
+    left: 65px;
+    overflow-y: auto;
+}
+
+.esconder{
+    display:none;
+}
+
+.hide2{
+    display: none;
+}
+
+
+
+
