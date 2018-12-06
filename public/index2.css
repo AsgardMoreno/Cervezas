@@ -25,25 +25,35 @@
 }
 .estaCerveza{
     display: inline-block;
-    width:  112px;
+    top: 10px;
+    width: 160px;
     z-index: 2;
-    margin: 2px;
+    margin: 5px;
     cursor: pointer;
     
 }
 .estaCerveza:hover{
-    transition: 100ms;
-    transform:scale(1.05);
+    border: 2px black solid;
 }
-.cardName:active{
+
+.newDiv{
+    font-family: 'Acme', sans-serif;
+   font-size: 14px;
+   text-align: center; 
+  
+   height:40px;
+   z-index: 2;
+}
+.active{
     transition: 50ms;
-    transform:scale(1.4);
+    transform:scale(1.9);
     background: black;
     border: 1px groove white;
     padding: 10px;
     z-index: 3;
     border-radius: 20%;
-    padding: 37px;
+    padding: 13px;
+    
 }
 
 .writeMenu{
@@ -53,11 +63,11 @@
     color: white;
     top: 58px;
     left: 489px;
-    font-size: 20px;
+    font-size: 18px;
     width: 323px;
     height: 149px;
-    padding: 3px;
-  
+    padding: 1px;
+    
 }
 .nombre{
     font-size: 20px;
@@ -67,6 +77,9 @@
 .cardName{
     font-family: 'Acme', sans-serif;
     font-size: 14px;
+    text-justify:top; 
+    width: 160px;
+    height: 215px;
 }
 .menuOptions{
     top: 126px;
@@ -151,6 +164,7 @@
 .hide2{
     display: none;
 }
+
 
 
 

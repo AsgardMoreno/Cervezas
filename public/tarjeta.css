@@ -1,0 +1,90 @@
+.tarjeta{
+    padding: 3px;
+    position: relative;
+    width: 500px;
+    height: 323px;
+    border: solid 6px ghostwhite;
+    border-radius: 20px;
+    background-image: radial-gradient(gray 38.9%, black 99.1%);
+    background-size: cover;
+    z-index: 4; 
+    left:300px;
+}
+.add{
+    width: 80px;
+    left: 121px;
+    top: 120px;
+    position: absolute;
+    opacity: .5;
+}
+#cuadroImagen{
+    position: absolute;
+    background-color: transparent;
+    border: 4px black solid;
+    width: 300px;
+    height: 300px;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.muestraImagen{   
+    margin-top: 8px;
+    margin-left: 4px;
+    margin-top: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: #6495ed33;
+    border-radius:10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.agregarImagen{
+    margin-left: 131px;
+    margin-top: 131px;
+    
+}
+.saveInfo{
+  height: 30px;
+  margin: 5px;
+  font-size: 13px;
+}
+.cerrar{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 443px;
+    margin-top: 5px;
+    border: gray .5px groove;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: #ff4200e3;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+.agregarCerveza{
+    width: 100px;
+    height: 38px;
+    font-size: 20px;
+    border: cornflowerblue 1px groove;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.inputsForm{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 160px;
+    left: 318px;
+    top: 45px;
+}
+
+#cuadroImagen{
+    opacity: 0;
+}

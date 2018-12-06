@@ -176,6 +176,10 @@
     .Slogin{
         z-index: 0;
     }
+    
+    select.filtro option[value="1"] { background-image:url(imgCerveceras/1estrella.jpg);}
+    select.filtro option[value="2"] { background-image:url(imgCerveceras/2estrellas.jpg);}
+    select.filtro option[value="3"] { background-image:url(imgCerveceras/3estrellas.jpg);}
 
   
  

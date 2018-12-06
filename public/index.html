@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="index2.css">
         <link href="https://fonts.googleapis.com/css?family=Acme|Fjalla+One|Inconsolata|Londrina+Sketch|Love+Ya+Like+A+Sister" rel="stylesheet">
-
+        <link rel="stylesheet" href="tarjeta.css">
 
         <title>Cervezas</title>
     </head>
@@ -29,25 +29,18 @@
                 <img src="imgCerveceras/blackboard.png" class="beerMenu" alt="menu" >
                 <div class="writeMenu"> 
 
-                    <div class="nombre" Nombre>   
-                        - Duende Rojo -
-                    </div>
+                    <div class="nombre" Nombre> 
+                     </div>
                     <div class="cerveceria">
-                        Duende Rojo
-                        </div>
+                     </div>
                     <div class="estilo">
-                        IPA
-                    </div>
-                    <div class="alcohol">
-                        5.5º Alc.
-                    </div>
+                        </div>
+                    <div class="alcohol">   
+                        </div>
                     <div class="pais">
-                        México
-                    </div>
+                        </div>
                     <div class="calificacion">
-                        Calificación    
-                    </div>
-                   
+                        </div>
                 
                 </div> 
 
@@ -62,47 +55,25 @@
                 </div>
 
                 <div id="cerveza" class="cervezaDiv" >
-                    
-
-                    <div class="cardName"> "Duende Rojo De México IPA para tu primo"
-
-                        <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza"> 
-
                     </div>
-                    <div class="cardName"> "Duende Rojo De México IPA para tu primo"
-
-                        <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza"> 
-    
-                    </div>
-
-                    <div class="cardName">  <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza"> </div>
-                    <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza">
-                    <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza">
-                    <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza">
-                    <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza">
-                    <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza">
-                    <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza">
-                    <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza">
-                    <img src="imgCerveceras/cervezaDuende.jpg" alt="cerveza" class="estaCerveza">
-
-                </div>
 
                 <button class="back"> < </button>
                 <button class="next"> > </button>
                 <div class="barManD">
-
-                <img src="imgCerveceras/3y5.jpg" alt="3.5" class="rating">
+                
+                    <div class="hide2">
+                <img src="imgCerveceras/3estrellas.jpg" alt="3estrellas" class="rating">
                 <img src="imgCerveceras/dialogue.png" alt="dialogo" class="dialogo">
-                <div class ="notas">* Aunque dice ser color rojizo, el color es mas bien ambar, sin tonos rojizos, pero esta de igual manera esta rica, sigo escribiendo solo para probar que el overflow funcione correctamente</div>
-               
+                <div class ="notas"></div>
+                    </div>
                 </div>
                 </div>
             </div>
             
             <div class="menuOptions hide2">
                 <select class="filtro">
-                        <option value="all">-Estilos-</option>
-                        <optgroup label ="Estilo" value="Estilo" class="Estilo">
+                        <option value="all">-Todas-</option>
+                        <optgroup label ="Estilo" value="Estilo" >
                         
                           <option value="Lager">Lager</option>
                           <option value="Vienna">Vienna</option>
@@ -122,14 +93,38 @@
                         <option value="" disabled selected>- Pais -</option>
                 </select>
                 <select class="filtro">
-                        <option value="" disabled selected>- Calificaión -</option>
+                        <option value="" disabled selected>- Calificación -</option>
+                        <option value="1" alt="1estrella" >1 Estrella</option>
+                        <option value="2" alt="2estrella">2 Estrellas</option>
+                        <option value="3" alt="3estrella">3 Estrellas</option>
+                        <option value="4" alt="4estrella">4 Estrellas</option>
+                        <option value="5" alt="5estrella">5 Estrellas</option>
+                        
                 </select>
 
-                <button class="filtro">
+                <button class="filtro" id="guardar">
                         +Añadir Cerveza
                 </button>
             </div>
         </div>
+        <div class="tarjeta hide2">
+            <button class="cerrar">X</button>
+            <div class="muestraImagen">
+                <img src="imgCerveceras/add.png" class="add" alt="">
+                <input id="cuadroImagen" type="file" accept="image/*" capture="environment">
+            </div>
+        <div class="inputsForm">
+            <input type="text" placeholder="Cerveceria" class="saveInfo">
+            <input type="text" placeholder="Nombre de cerveza" class="saveInfo">
+            <input type="text" placeholder="Estilo" class="saveInfo">
+            <input type="text" placeholder="Alcohol" class="saveInfo">
+            <input type="text" placeholder="País" class="saveInfo">
+            <input type="text" placeholder="calificacion" class="saveInfo">
+            <input type="text" placeholder="notas" class="saveInfo">
+            <button class="agregarCerveza" id="agregar">Save</button>
+        </div>
+                
+            </div>
 
         <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
         <script>
